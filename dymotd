@@ -1,0 +1,9 @@
+#!/bin/bash
+ 
+PONIES=`cat /usr/share/ponysay/ponies23.list`
+
+if command -v ponysay > /dev/null 2>&1 ; then
+    printsysinfo.py | ponysay -b round -W 80 --files $PONIES
+else 
+    printsysinfo.py
+fi 
