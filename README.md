@@ -12,14 +12,14 @@
 ```bash
 # first install the requirements
 
-# copy the files around
-git clone git@github.com:zidarsk8/ponymotd.git
 
+git clone git@github.com:zidarsk8/ponymotd.git
 cd ponymotd
 
 # edit the MAINTAINER line
 vim printsysinfo.py 
 
+# copy the files around
 sudo cp printsysinfo.py /usr/bin/
 sudo cp dymotd /usr/bin/
 sudo cp ponies23.list /usr/share/ponysay/
@@ -39,6 +39,7 @@ grep motd -r /etc/pam.d/
 
 
 # now we will enable our motd 
+
 sudo ln -s /usr/bin/dymotd /etc/profile.d/dymotd.sh
 
 ```
