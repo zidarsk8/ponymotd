@@ -34,7 +34,7 @@ sudo sed -i "s/#*\s*PrintLastLog .*/PrintLastLog no/g" /etc/ssh/sshd_config
 sudo systemctl restart sshd # on ArchLinux
 # sudo service ssh restart # on ubuntu
 
-# go through the list of files here and comment out all thi lines with pam_motd.so
+# go through the list of files here and comment out all the lines with pam_motd.so
 grep motd -r /etc/pam.d/
 
 
