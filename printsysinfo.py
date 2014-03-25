@@ -4,6 +4,7 @@ import subprocess
 import getpass
 import socket
 
+MAINTAINER="Your Name, your@email.com"
 
 colors = {
         "{p}" : "\033[0;35m", # dark purple
@@ -76,6 +77,7 @@ data.append(  "{w}      Users {p}= {g}%s" % (usersLogedIn) )
 
 data.append(  "{p}%s{w} %s {p}%s" % ("+"*np, "Maintenance", "+"*np) )
 
+data.append(  "{w} Maintainer {p}= {g}%s" % (MAINTAINER) )
 data.append(  "{w}    Release {p}= {g}%s" % (release) )
 data.append(  "{w}   Upgrades {p}= {g}%s packages" % (upgrades) )
 

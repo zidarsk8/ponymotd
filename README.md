@@ -16,6 +16,10 @@
 git clone git@github.com:zidarsk8/ponymotd.git
 
 cd ponymotd
+
+# edit the MAINTAINER line
+vim printsysinfo.py 
+
 sudo cp printsysinfo.py /usr/bin/
 sudo cp dymotd /usr/bin/
 sudo cp ponies23.list /usr/share/ponysay/
