@@ -13,7 +13,7 @@
 # first install the requirements
 
 
-git clone git@github.com:zidarsk8/ponymotd.git
+git clone https://github.com/zidarsk8/ponymotd.git
 cd ponymotd
 
 # edit the MAINTAINER line
