@@ -36,6 +36,8 @@ sudo systemctl restart sshd # on ArchLinux
 
 # go through the list of files here and comment out all the lines with pam_motd.so
 grep motd -r /etc/pam.d/
+# or run:
+# find /etc/pam.d/ -type f | xargs sudo sed -i 's/\(^.*motd.*$\)/#\1/' 
 
 
 # now we will enable our motd 
