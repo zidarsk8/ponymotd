@@ -22,7 +22,6 @@ vim printsysinfo.py
 # copy the files around
 sudo cp printsysinfo.py /usr/bin/
 sudo cp dymotd /usr/bin/
-sudo cp ponies23.list /usr/share/ponysay/
 
 
 # let's dissable the current motd
@@ -49,7 +48,3 @@ sudo ln -s /usr/bin/dymotd /etc/profile.d/dymotd.sh
 #### Result
 
 ![pony screenshot](https://raw.githubusercontent.com/zidarsk8/ponymotd/master/screenshot.png "pony")
-
-#### TODO: 
-
-make a pull request for ponysay to add max height as an argument and get rid of ponyes23.list
