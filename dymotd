@@ -1,6 +1,12 @@
 #!/bin/bash
  
-PONIES=`cat /usr/share/ponysay/ponies23.list`
+PONIES=$(
+  ls /usr/share/ponysay/{extraponies,ponies}/* | 
+  xargs grep "HEIGHT" |
+  grep "2[0-7]\|1." |
+  grep -oE "^[^:]*" |
+  tr "\n" " "
+)
 
 if command -v ponysay > /dev/null 2>&1 ; then
     printsysinfo.py | ponysay -b round -W 80 --files $PONIES
