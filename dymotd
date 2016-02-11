@@ -1,15 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
  
-PONIES=$(
-  ls /usr/share/ponysay/{extraponies,ponies}/* | 
-  xargs grep "HEIGHT" |
-  grep "2[0-7]\|1." |
-  grep -oE "^[^:]*" |
-  tr "\n" " "
-)
-
 if command -v ponysay > /dev/null 2>&1 ; then
-    printsysinfo.py | ponysay -b round -W 80 --files $PONIES
+    printsysinfo.py | ponysay -rheight={0..27} -b round -W 80
 else 
     printsysinfo.py
 fi 
